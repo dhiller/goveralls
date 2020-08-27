@@ -136,7 +136,7 @@ var varNames = [...]string{
 	"CI_BRANCH", "APPVEYOR_REPO_BRANCH",
 	"WERCKER_GIT_BRANCH", "DRONE_BRANCH",
 	"BUILDKITE_BRANCH", "BRANCH_NAME",
-	"CI_COMMIT_REF_NAME",
+	"CI_COMMIT_REF_NAME", "PULL_REFS",
 }
 
 func loadBranchFromEnv() string {

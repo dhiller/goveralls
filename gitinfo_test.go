@@ -115,6 +115,13 @@ func TestLoadBranchFromEnv(t *testing.T) {
 			"github-master",
 		},
 		{
+			"Prow PULL_REFS defined",
+			map[string]string{
+				"PULL_REFS": "prow-master",
+			},
+			"prow-master",
+		},
+		{
 			"no branch var defined",
 			map[string]string{},
 			"",
